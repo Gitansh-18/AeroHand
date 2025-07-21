@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flappy Gesture Enhanced</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="loading-screen">
+        <div class="loading-content">
+            <h2>Loading... Please wait</h2>
+            <div class="loading-bar">
+                <div class="loading-progress"></div>
+            </div>
+        </div>
+    </div>
+    
+    <div id="gameContainer" style="position: relative; width: 100vw; height: 100vh;">
+        <canvas id="gameCanvas"></canvas>
+        <button id="fullscreenBtn" title="Toggle Fullscreen" style="position: fixed; left: 24px; bottom: 24px; width: 44px; height: 44px; background: #FFD700; border: none; border-radius: 50%; color: #222; font-size: 22px; box-shadow: 0 2px 8px rgba(0,0,0,0.18); z-index: 9999; cursor: pointer; display: flex; align-items: center; justify-content: center; pointer-events: auto;">⛶</button>
+        <button id="exitFullscreenBtn" title="Exit Fullscreen" style="position: fixed; left: 24px; bottom: 24px; width: 44px; height: 44px; background: #FFD700; border: none; border-radius: 50%; color: #222; font-size: 22px; box-shadow: 0 2px 8px rgba(0,0,0,0.18); z-index: 9999; cursor: pointer; display: none; align-items: center; justify-content: center; pointer-events: auto;">←</button>
+    </div>
+    
+    <div id="controls" class="mobile-controls">
+        <button id="upBtn" class="control-btn up-btn">↑</button>
+        <button id="downBtn" class="control-btn down-btn">↓</button>
+    </div>
+    
+    <video id="videoElement" autoplay muted playsinline style="display: none;"></video>
+    
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/hands@0.4.1646424915/hands.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils@0.3.1640029074/camera_utils.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/drawing_utils@0.3.1620248257/drawing_utils.js"></script>
+    <!-- Vite will inject the correct bundle script during build -->
+</body>
+</html>
