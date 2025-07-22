@@ -107,3 +107,5 @@ class HandTracking {
         }
     }
 }
+
+export default HandTracking;

@@ -511,3 +511,5 @@ class GameLogic {
                y >= rect.y && y <= rect.y + rect.height;
     }
 }
+
+export default GameLogic;

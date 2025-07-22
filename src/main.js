@@ -1,3 +1,7 @@
+import GameEngine from './gameEngine.js';
+import GameLogic from './gameLogic.js';
+import HandTracking from './handTracking.js';
+
 class FlappyGestureGame {
     constructor() {
         this.engine = new GameEngine();
