@@ -100,7 +100,8 @@ class GameRenderer {
         const birdH = this.engine.birdSize.height * this.gameLogic.tutBirdScale;
         // Place bird on left, hand on right, with enough gap between
         let birdX = margin;
-        let handX = this.engine.width - margin - handSize;
+        let handX = (this.engine.width - handSize) / 2;
+
         // If window is very narrow, reduce hand size and margin
         let minGap = Math.max(this.engine.width * 0.06, 24);
         if (handX - (birdX + birdW) < minGap) {
